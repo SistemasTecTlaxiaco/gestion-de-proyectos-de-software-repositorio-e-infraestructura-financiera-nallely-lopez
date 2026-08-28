@@ -1,56 +1,49 @@
-# 🚀 PRACTICA 2
+# 📊 Gestión de Proyectos de Software: Repositorio e Infraestructura Financiera
 
-> Breve descripción de una o dos líneas que explique el propósito del proyecto, su valor y la solución que aporta.
+> Proyecto académico y técnico enfocado en la estructuración, seguimiento de entregables mediante hitos (Milestones) y la integración de mecanismos de financiamiento continuo y sustentabilidad para software libre a través del protocolo Drips.
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![GitHub Milestones](https://img.shields.io/badge/milestones-tracked-blueviolet?logo=github)](https://github.com/[TU_USUARIO]/[TU_REPOSITORIO]/milestones)
-[![Drips Support](https://img.shields.io/badge/Support_on-Drips-00D395?logo=ethereum)](https://drips.network/app/projects/github/[TU_USUARIO]/[TU_REPOSITORIO])
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![GitHub Milestones](https://img.shields.io/badge/Milestones-En_Seguimiento-blueviolet?logo=github)](https://github.com/SistemasTecTlaxiaco/gestion-de-proyectos-de-software-repositorio-e-infraestructura-financiera-nallely-lopez/milestones)
+[![Drips Protocol](https://img.shields.io/badge/Financial_Infra-Drips_Network-00D395?logo=ethereum)](https://docs.drips.network/)
 
 ---
 
 ## 📋 Tabla de Contenidos
 
-- [Acerca del Proyecto](#-acerca-del-proyecto)
-- [Características Principales](#-características-principales)
-- [Tecnologías Utilizadas](#-tecnologías-utilizadas)
-- [Inicio Rápido e Instalación](#-inicio-rápido-e-instalación)
-- [Seguimiento y Hoja de Ruta (Milestones)](#-seguimiento-y-hoja-de-ruta-milestones)
-- [Sustentabilidad y Financiamiento (Drips)](#-sustentabilidad-y-financiamiento-drips)
-- [Guía de Contribución](#-guía-de-contribución)
+- [Descripción General](#-descripción-general)
+- [Objetivos del Proyecto](#-objetivos-del-proyecto)
+- [Estructura del Repositorio](#-estructura-del-repositorio)
+- [Seguimiento y Hoja de Ruta (GitHub Milestones)](#-seguimiento-y-hoja-de-ruta-github-milestones)
+- [Infraestructura Financiera y Sustentabilidad (Drips Network)](#-infraestructura-financiera-y-sustentabilidad-drips-network)
+- [Flujo de Trabajo y Contribución](#-flujo-de-trabajo-y-contribución)
+- [Autora y Créditos](#-autora-y-créditos)
 - [Licencia](#-licencia)
 
 ---
 
-## 📖 Acerca del Proyecto
+## 📖 Descripción General
 
-Explica detalladamente la motivación del proyecto, el problema que resuelve y cómo funciona a nivel general.
+Este repositorio constituye la base para la gestión de proyectos de software integrando dos pilares esenciales:
 
-### 🌟 Características Principales
-
-- **Característica 1:** Explicación concisa del valor.
-- **Característica 2:** Explicación concisa del valor.
-- **Característica 3:** Explicación concisa del valor.
+1. **Gestión Operativa y Entregables:** Implementación de seguimiento estructurado mediante [GitHub Milestones](https://docs.github.com/en/issues/using-labels-and-milestones-to-track-work/about-milestones) para organizar incidencias (*issues*), solicitudes de extracción (*pull requests*) y cronogramas de entrega.
+2. **Infraestructura Financiera Abierta:** Integración del modelo de financiamiento descentralizado de [Drips Network](https://docs.drips.network/) para el soporte continuo de dependencias y desarrolladores mediante *streaming* de fondos y distribución de fondos (*splits*).
 
 ---
 
-## 🛠 Tecnologías Utilizadas
+## 🎯 Objetivos del Proyecto
 
-- **Frontend / Core:** [Ej. Next.js / TypeScript / Python]
-- **Smart Contracts / Web3 (si aplica):** [Ej. Solidity / Foundry / Drips SDK]
-- **Infraestructura:** [Ej. Vercel, Docker, GitHub Actions]
+- Configurar un entorno estandarizado de control de versiones y trazabilidad de requerimientos.
+- Diseñar y calendarizar hitos de desarrollo para monitorear el porcentaje de avance de cada fase.
+- Documentar e integrar la infraestructura financiera basada en contratos inteligentes y protocolos descentralizados de distribución continua de recursos.
 
 ---
 
-## 🚀 Inicio Rápido e Instalación
+## 📂 Estructura del Repositorio
 
-### Requisitos Previos
-
-- Node.js (v18+) / Python 3.10+ (ajustar según el proyecto)
-- Git
-
-### Instalación
-
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/](https://github.com/)[TU_USUARIO]/[TU_REPOSITORIO].git
-   cd [TU_REPOSITORIO]
+```text
+├── docs/                 # Documentación técnica, especificaciones y guías
+├── src/                  # Código fuente de las implementaciones
+├── scripts/              # Scripts de automatización y configuración
+├── .github/              # Plantillas de issues, PRs y flujos de trabajo (CI/CD)
+├── README.md             # Documentación principal del repositorio
+└── LICENSE               # Licencia de uso del proyecto
