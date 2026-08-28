@@ -23,6 +23,7 @@
 
 ## 📝 Resumen Ejecutivo y Alcance
 
+Este reporte analiza los fundamentos técnicos y estratégicos necesarios para postular un proyecto de bienes públicos / herramientas para desarrolladores ante el **Stellar Community Fund (SCF)**, integrando mecánicas de dispersión continua de fondos basadas en **Drips Protocol**. El objetivo es documentar los requisitos de postulación, la mecánica del streaming on-chain, la arquitectura del repositorio y el desglose de fases financieras para el archivo `FINANCIAMIENTO.md`.
 
 ---
 
