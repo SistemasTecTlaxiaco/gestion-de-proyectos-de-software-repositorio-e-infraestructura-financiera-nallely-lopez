@@ -1,4 +1,4 @@
-# 🚀 [Nombre del Proyecto]
+# 🚀 PRACTICA 2
 
 > Breve descripción de una o dos líneas que explique el propósito del proyecto, su valor y la solución que aporta.
 
