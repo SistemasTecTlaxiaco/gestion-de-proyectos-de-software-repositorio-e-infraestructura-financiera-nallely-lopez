@@ -29,6 +29,12 @@ Este reporte analiza los fundamentos técnicos y estratégicos necesarios para p
 
 ## 🏛️ Requisitos y Mecánica de Postulación al Stellar Community Fund (SCF)
 
+- **Alineación con el Ecosistema:** El proyecto debe ejecutarse directamente sobre la red Stellar o implementar contratos inteligentes en **Soroban** (Rust / WASM).
+- **Esquema de Desembolsos por Hitos (*Milestone-based Funding*):** SCF no otorga financiamiento total por adelantado; exige definir hitos medibles (*milestones*) con entregables técnicos verificables antes de liberar cada tramo de presupuesto.
+- **Criterios Clave de Evaluación:**
+  - **Utilidad y tracción:** Resolución de una fricción concreta en la infraestructura o adopción de Stellar.
+  - **Viabilidad técnica y código abierto:** Preferencia estricta por licencias abiertas (MIT/Apache 2.0) y documentación clara de arquitectura.
+  - **Capacidad del equipo:** Historial técnico comprobable en repositorios públicos.
 
 ---
 
