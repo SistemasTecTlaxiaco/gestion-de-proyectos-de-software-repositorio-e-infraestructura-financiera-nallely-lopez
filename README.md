@@ -39,8 +39,20 @@ Este reporte analiza los fundamentos técnicos y estratégicos necesarios para p
 ---
 
 ## 💧 Funcionamiento e Integración de Drips Protocol
-
-
+### ¿Qué es el streaming de fondos on-chain?
+ 
+A diferencia de transferencias atómicas puntuales, Drips permite transferencias deterministas continuas de saldo calculadas segundo a segundo ($Monto / Tiempo$). Los balances acumulados se actualizan matemáticamente en el estado del contrato sin necesidad de ejecutar transacciones intermedias por cada segundo transcurrido.
+ 
+### Requisitos Técnicos para Recepción
+ 
+1. Dirección de wallet receptora válida en la red compatible.
+2. Inicialización de una cuenta/registro en los contratos del protocolo (o vinculación mediante identificadores de repositorio como GitHub IDs en implementaciones compatibles).
+3. Aceptación de los parámetros del stream (tasa de flujo por segundo y token ERC-20 / token Soroban equivalente).
+### Límites Técnicos y Restricciones
+ 
+- **Dependencia de balance del emisor:** El flujo cesa inmediatamente si la cuenta emisora no mantiene reservas suficientes.
+- **Coste de gas en recolección (*Squeeze/Collect*):** Aunque la acumulación es pasiva, la materialización de los fondos hacia el balance disponible de la wallet receptora requiere una transacción on-chain.
+- **Compatibilidad de tokens:** Restringido a tokens estándar que cumplan con la interfaz requerida por el contrato de streaming.
 ---
 
 ## 📂 Estructura y Navegabilidad del Repositorio
@@ -63,12 +75,20 @@ Para garantizar la auditoría técnica independiente sin explicación oral, el r
 ---
 
 ## ⏱️ Backlog por Fases Ligado a Tramos de Financiamiento
-
+ 
+| Fase | Entregable Técnico | Desembolso Asociado | Justificación |
+|---|---|---|---|
+| **Fase 1: Core Contracts** | Smart contracts de streaming en Soroban + suite de tests unitarios (>85% cobertura). | 35% del presupuesto | Horas de desarrollo de arquitectura e ingeniería de contratos en Rust. |
+| **Fase 2: Testnet & SDK** | Despliegue en Stellar Testnet, SDK en TypeScript y conexión con wallets (Freighter). | 40% del presupuesto | Integración cliente-contrato y validación funcional en entorno de pruebas. |
+| **Fase 3: Mainnet & Auditoría** | Despliegue en producción, documentación final y panel de control web operativo. | 25% del presupuesto | Verificación de seguridad, despliegue final y puesta en marcha pública. |
+ 
 ---
-
+ 
 ## 🔍 Análisis de Brecha ("El Hueco Honesto")
-
-
+ 
+- **Requisito no cumplido actualmente:** El proyecto carece de un indexador descentralizado dedicado para consultar históricos de transacciones complejas en tiempo real; actualmente se depende únicamente de llamadas RPC directas al nodo de Stellar/Soroban.
+- **Estrategia de resolución:** Implementación de un consumidor de eventos basado en Mercury o un subgrafo ligero específico para los eventos emitidos por el contrato.
+- **Fecha estimada de cierre:** 3 semanas posteriores al despliegue en Testnet (previo al corte de entrega de la Fase 2).
 ---
 
 ## 📚 Fuentes Primarias Oficiales (Bibliografía Técnica)
