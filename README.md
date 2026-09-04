@@ -43,16 +43,16 @@ Este reporte analiza los fundamentos técnicos y estratégicos necesarios para p
  
 A diferencia de transferencias atómicas puntuales, Drips permite transferencias deterministas continuas de saldo calculadas segundo a segundo ($Monto / Tiempo$). Los balances acumulados se actualizan matemáticamente en el estado del contrato sin necesidad de ejecutar transacciones intermedias por cada segundo transcurrido.
  
-### Requisitos Técnicos para Recepción
+### Requisitos Técnicos para Recepción.
  
 1. Dirección de wallet receptora válida en la red compatible.
 2. Inicialización de una cuenta/registro en los contratos del protocolo (o vinculación mediante identificadores de repositorio como GitHub IDs en implementaciones compatibles).
 3. Aceptación de los parámetros del stream (tasa de flujo por segundo y token ERC-20 / token Soroban equivalente).
-### Límites Técnicos y Restricciones
+### Límites Técnicos y Restricciones.
  
 - **Dependencia de balance del emisor:** El flujo cesa inmediatamente si la cuenta emisora no mantiene reservas suficientes.
 - **Coste de gas en recolección (*Squeeze/Collect*):** Aunque la acumulación es pasiva, la materialización de los fondos hacia el balance disponible de la wallet receptora requiere una transacción on-chain.
-- **Compatibilidad de tokens:** Restringido a tokens estándar que cumplan con la interfaz requerida por el contrato de streaming.
+- **Compatibilidad de tokens:** Restringido a tokens estándar que cumplan con la interfaz requerida por el contrato de streaming
 ---
 
 ## 📂 Estructura y Navegabilidad del Repositorio
