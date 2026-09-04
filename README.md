@@ -1,4 +1,4 @@
-# 🚀 Reporte de Investigación: Arquitectura y Viabilidad de Financiamiento Web3
+#  Reporte de Investigación: Arquitectura y Viabilidad de Financiamiento Web3
 
 > **StellarStream / OpenGrant Flow** — Infraestructura modular de streaming de fondos on-chain y gestión de grants en Soroban. Este reporte analiza los fundamentos técnicos y estratégicos necesarios para postular ante el Stellar Community Fund (SCF), integrando mecánicas de dispersión continua de fondos basadas en Drips Protocol.
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 📋 Tabla de Contenidos
+##  Tabla de Contenidos
 
 1. [Resumen Ejecutivo y Alcance](#-resumen-ejecutivo-y-alcance)
 2. [Requisitos y Mecánica de Postulación al SCF](#-requisitos-y-mecánica-de-postulación-al-stellar-community-fund-scf)
@@ -21,13 +21,13 @@
 
 ---
 
-## 📝 Resumen Ejecutivo y Alcance
+##  Resumen Ejecutivo y Alcance
 
 Este reporte analiza los fundamentos técnicos y estratégicos necesarios para postular un proyecto de bienes públicos / herramientas para desarrolladores ante el **Stellar Community Fund (SCF)**, integrando mecánicas de dispersión continua de fondos basadas en **Drips Protocol**. El objetivo es documentar los requisitos de postulación, la mecánica del streaming on-chain, la arquitectura del repositorio y el desglose de fases financieras para el archivo `FINANCIAMIENTO.md`.
 
 ---
 
-## 🏛️ Requisitos y Mecánica de Postulación al Stellar Community Fund (SCF)
+##  Requisitos y Mecánica de Postulación al Stellar Community Fund (SCF)
 
 - **Alineación con el Ecosistema:** El proyecto debe ejecutarse directamente sobre la red Stellar o implementar contratos inteligentes en **Soroban** (Rust / WASM).
 - **Esquema de Desembolsos por Hitos (*Milestone-based Funding*):** SCF no otorga financiamiento total por adelantado; exige definir hitos medibles (*milestones*) con entregables técnicos verificables antes de liberar cada tramo de presupuesto.
@@ -38,7 +38,7 @@ Este reporte analiza los fundamentos técnicos y estratégicos necesarios para p
 
 ---
 
-## 💧 Funcionamiento e Integración de Drips Protocol
+##  Funcionamiento e Integración de Drips Protocol
 ### ¿Qué es el streaming de fondos on-chain?
  
 A diferencia de transferencias atómicas puntuales, Drips permite transferencias deterministas continuas de saldo calculadas segundo a segundo ($Monto / Tiempo$). Los balances acumulados se actualizan matemáticamente en el estado del contrato sin necesidad de ejecutar transacciones intermedias por cada segundo transcurrido.
@@ -55,7 +55,7 @@ A diferencia de transferencias atómicas puntuales, Drips permite transferencias
 - **Compatibilidad de tokens:** Restringido a tokens estándar que cumplan con la interfaz requerida por el contrato de streaming
 ---
 
-## 📂 Estructura y Navegabilidad del Repositorio
+##  Estructura y Navegabilidad del Repositorio
 
 Para garantizar la auditoría técnica independiente sin explicación oral, el repositorio debe organizarse bajo la siguiente convención:
 
@@ -74,7 +74,7 @@ Para garantizar la auditoría técnica independiente sin explicación oral, el r
 
 ---
 
-## ⏱️ Backlog por Fases Ligado a Tramos de Financiamiento
+##  Backlog por Fases Ligado a Tramos de Financiamiento
  
 | Fase | Entregable Técnico | Desembolso Asociado | Justificación |
 |---|---|---|---|
@@ -84,14 +84,14 @@ Para garantizar la auditoría técnica independiente sin explicación oral, el r
  
 ---
  
-## 🔍 Análisis de Brecha ("El Hueco Honesto")
+##  Análisis de Brecha ("El Hueco Honesto")
  
 - **Requisito no cumplido actualmente:** El proyecto carece de un indexador descentralizado dedicado para consultar históricos de transacciones complejas en tiempo real; actualmente se depende únicamente de llamadas RPC directas al nodo de Stellar/Soroban.
 - **Estrategia de resolución:** Implementación de un consumidor de eventos basado en Mercury o un subgrafo ligero específico para los eventos emitidos por el contrato.
 - **Fecha estimada de cierre:** 3 semanas posteriores al despliegue en Testnet (previo al corte de entrega de la Fase 2).
 ---
 
-## 📚 Fuentes Primarias Oficiales (Bibliografía Técnica)
+##  Fuentes Primarias Oficiales (Bibliografía Técnica)
 
 1. **Stellar Development Foundation.** (2026). *Stellar Community Fund (SCF) Handbook & Guidelines*. Official SCF Governance and Application Documentation. Disponible en: https://communityfund.stellar.org
 2. **Drips Protocol.** (2025). *Drips Technical Overview & Smart Contract Specifications*. Drips Network Documentation. Disponible en: https://docs.drips.network
